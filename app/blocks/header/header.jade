@@ -1,0 +1,11 @@
+include ../logo/logo
+include ../menu/menu
+include ../page-trim/page-trim
+
+mixin header()
+	+b.HEADER.header&attributes(attributes)
+		+page-trim
+			+e({b: 'header'}).logo
+				+logo
+			+e({b: 'header'}).menu
+				+menu
