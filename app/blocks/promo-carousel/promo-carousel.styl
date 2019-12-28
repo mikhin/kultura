@@ -1,0 +1,212 @@
+.promo-carousel
+	display block
+	font-family Raleway
+	position relative
+
+.promo-carousel__list
+	position relative
+
+.promo-carousel__indicator
+	position absolute
+	z-index 1
+	left 50%
+	transform translateX(-50%)
+	width 110px
+	margin 0 auto
+	text-align center
+	bottom 25px
+
+	// fucking slick API
+	> li
+		display inline-block
+
+		&:not(:last-child)
+			margin-right 16px
+
+		> button
+			display block
+			font-size 0
+			width 10px
+			height 10px
+			background-color $white
+			opacity .4
+			border-radius 50%
+			border none
+			transition background-color .3s
+
+			&:hover, &:focus
+				opacity 1
+				background-color $accent
+
+		&.slick-active
+			> button
+				opacity 1
+
+.promo-carousel__slide
+	position relative
+
+	&::before
+		content ''
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		background-color rgba(0, 0, 0, .25)
+		z-index 0
+
+.promo-carousel__slide-description
+	position absolute
+	top 82px
+	left 50%
+	right 0
+	bottom 0
+	transform translateX(-50%)
+	width 100%
+	padding-left 20px
+	padding-right 20px
+
+	@media (min-width: $desktopWidth)
+		top 132px
+
+.promo-carousel__slide-label
+	position absolute
+	top 25px
+	left 50%
+	transform translateX(-50%)
+	background-color $accent
+	font-size 16px
+	line-height 19px
+	letter-spacing 2px
+	text-transform uppercase
+	color $white
+	padding 4px 16px
+	z-index 1
+
+	@media (min-width: $desktopWidth)
+		top 62px
+
+.promo-carousel__slide-title
+	font-size 30px
+	line-height 45px
+	text-align center
+	letter-spacing 2px
+	text-transform uppercase
+	color $white
+	margin-bottom 20px
+
+	@media (min-width: $desktopWidth)
+		font-size 72px
+		line-height 85px
+
+.promo-carousel__slide-summary
+	font-size 14px
+	line-height 21px
+	text-align center
+	color $white
+
+	@media (min-width: $desktopWidth)
+		position absolute
+		bottom 48px
+		left 50%
+		transform translateX(-50%)
+		max-width 456px
+
+.promo-carousel__controls
+	display none
+
+	@media (min-width: $desktopWidth)
+		display flex
+		justify-content space-between
+		position absolute
+		z-index 1
+		width 100%
+		bottom 170px
+		max-width 954px
+		left 50%
+		transform translateX(-50%)
+
+	@media (min-width: $desktopWidth)
+		&::before
+			content ''
+			position absolute
+			height 42px
+			width 2px
+			left 50%
+			background-color $white
+			top 50%
+			transform translateY(-50%) translateX(-50%)
+
+.promo-carousel__control
+	display block
+	background-color transparent
+	border none
+	font-size 13px
+	line-height 15px
+	color $white
+	position relative
+	padding-bottom 20px
+	padding-top 20px
+	transition opacity .3s
+
+	&:hover, &:focus
+		opacity .5
+
+	&::before
+		content ''
+		display inline-block
+		width 64px
+		height 1px
+		background-color $white
+		position absolute
+		top 50%
+		transform translateY(-50%)
+
+	&::after
+		content ''
+		position absolute
+		background-image url('/assets/images/promo-carousel__control.svg')
+		background-repeat no-repeat
+		background-size 24px 24px
+		background-position center
+		width 24px
+		height 24px
+		padding 16px
+		top 50%
+
+.promo-carousel__control_previous
+	padding-right 75px
+	text-align left
+
+	&::before
+		right 0
+
+	&::after
+		left 400px
+		transform translateY(-50%)
+
+.promo-carousel__control_next
+	padding-left 75px
+	text-align right
+
+	&::before
+		left 0
+
+	&::after
+		right 400px
+		transform rotate(180deg) translateY(50%)
+
+.promo-carousel__slide-caption
+	visually-hidden()
+
+.promo-carousel__slide-figure
+	overflow hidden
+	height 372px
+
+	@media (min-width: $desktopWidth)
+		height 460px
+
+.promo-carousel__slide-image
+	object-fit cover
+	height 100%
+	width 100%

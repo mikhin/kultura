@@ -1,0 +1,19 @@
+mixin promo-carousel(slides)
+	+b.promo-carousel&attributes(attributes)
+		+e.controls
+			+e.BUTTON.control_previous(type="button") Предыдущая
+			+e.BUTTON.control_next(type="button") Следующая
+		+e.list
+			each slide in slides
+				+e.slide
+					+e.FIGURE.slide-figure
+						+e.PICTURE.slide-image-canvas
+							source(type='image/webp' srcset=`${slide.background.desktop.webp['1x']} 1x, ${slide.background.desktop.webp['2x']} 2x` media='(min-width: 1200px)')
+							source(type='image/webp' srcset=`${slide.background.mobile.webp['1x']} 1x, ${slide.background.mobile.webp['2x']} 2x` media='(min-width: 320px)')
+							source(type='image/jpeg' srcset=`${slide.background.desktop.jpg['1x']} 1x, ${slide.background.desktop.jpg['2x']} 2x` media='(min-width: 1200px)')
+							+e.IMG.slide-image(src=`${slide.background.mobile.jpg['1x']}` srcset=`${slide.background.mobile.jpg['1x']} 1x, ${slide.background.mobile.jpg['2x']} 2x` alt=`${slide.summary}`)
+						+e.FIGCAPTION.slide-caption!= slide.summary
+					+e.SPAN.slide-label!= slide.label
+					+e.slide-description
+						+e({tag: 'H3'}).slide-title!= slide.title
+						+e.P.slide-summary!= slide.summary

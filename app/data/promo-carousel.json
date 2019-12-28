@@ -1,0 +1,58 @@
+[
+	{
+		"label": "Кино",
+		"title": "«Страсть к преодолению»",
+		"summary": "Интервью Андрея Тарковского журналу &laquo;Искусство кино&raquo; о&nbsp;съемках &laquo;Соляриса&raquo;. Отреставрированная картина выходит в&nbsp;широкий прокат.",
+		"link": "#",
+		"background": {
+			"desktop": {
+				"jpg": {
+					"1x": "/assets/images/promo-carousel__slide-2--desktop@1x.jpg",
+					"2x": "/assets/images/promo-carousel__slide-2--desktop@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/promo-carousel__slide-2--desktop@1x.webp",
+					"2x": "/assets/images/promo-carousel__slide-2--desktop@2x.webp"
+				}
+			},
+			"mobile": {
+				"jpg": {
+					"1x": "/assets/images/promo-carousel__slide-2--mobile@1x.jpg",
+					"2x": "/assets/images/promo-carousel__slide-2--mobile@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/promo-carousel__slide-2--mobile@1x.webp",
+					"2x": "/assets/images/promo-carousel__slide-2--mobile@2x.webp"
+				}
+			}
+		}
+	},
+	{
+		"label": "Новое",
+		"title": "Подводный отель",
+		"summary": "Как известно, Дубай&nbsp;&mdash; город контрастов. Самые революционные и&nbsp;фантастические мечты архитекторов способен воплотить в&nbsp;жизнь этот мегаполис, построенный на&nbsp;нефти и&nbsp;за&nbsp;счет нефти.",
+		"link": "#",
+		"background": {
+			"desktop": {
+				"jpg": {
+					"1x": "/assets/images/promo-carousel__slide-1--desktop@1x.jpg",
+					"2x": "/assets/images/promo-carousel__slide-1--desktop@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/promo-carousel__slide-1--desktop@1x.webp",
+					"2x": "/assets/images/promo-carousel__slide-1--desktop@2x.webp"
+				}
+			},
+			"mobile": {
+				"jpg": {
+					"1x": "/assets/images/promo-carousel__slide-1--mobile@1x.jpg",
+					"2x": "/assets/images/promo-carousel__slide-1--mobile@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/promo-carousel__slide-1--mobile@1x.webp",
+					"2x": "/assets/images/promo-carousel__slide-1--mobile@2x.webp"
+				}
+			}
+		}
+	}
+]
