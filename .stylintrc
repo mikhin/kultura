@@ -20,7 +20,7 @@
 	"maxWarnings": false,
 	// "mixed": true, // bug: throw error when there are spaces after rule before comment
 	"namingConvention": "BEM",
-	"namingConventionStrict": true,
+	"namingConventionStrict": false,
 	"none": "always",
 	"noImportant": true,
 	"parenSpace": "never",
