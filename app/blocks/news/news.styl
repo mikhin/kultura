@@ -1,0 +1,78 @@
+.news
+	display block
+
+.news__title
+	font-weight bold
+	font-size 17px
+	line-height 20px
+	letter-spacing 2px
+	color #000000
+	text-transform uppercase
+	margin-bottom 15px
+
+.news__list
+	@media (min-width: $desktopWidth)
+		display grid
+		grid-template-columns 470px 270px
+		column-gap 30px
+
+.news__item
+	@media (min-width: $desktopWidth)
+		grid-column 2
+
+	&:not(:last-child)
+		margin-bottom 30px
+
+.news__item_primary
+	margin-bottom 31px
+
+	@media (min-width: $desktopWidth)
+		grid-column 1
+		grid-row 1 / span 3
+		width 470px
+
+		&:not(:last-child)
+			margin-bottom 0
+
+	.news__item-description
+		position absolute
+		bottom 24px
+		left 24px
+		right 24px
+
+	.news__item-title
+		font-size 20px
+		line-height 27px
+		margin-bottom 16px
+
+	.news__link
+		display block
+
+	.news__item-summary
+		font-size 14px
+		line-height 21px
+		color $black
+
+.news__item-title
+	font-family 'Playfair Display'
+	font-weight 900
+	font-size 14px
+	line-height 17px
+	color $black
+	margin-bottom 10px
+
+.news__item-summary
+	color $black
+	font-size 10px
+	line-height 15px
+
+.news__link
+	display flex
+	position relative
+	text-decoration none
+
+.news__item-description
+	order 1
+
+.news__item-image
+	margin-right 15px

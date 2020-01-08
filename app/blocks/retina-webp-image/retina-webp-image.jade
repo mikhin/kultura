@@ -1,0 +1,9 @@
+mixin retinaWebpImage(data, className)
+	+b.FIGURE.retina-webp-image(class=className)
+		+e.PICTURE.canvas
+			source(type='image/webp' srcset=`${data.desktop.webp['1x']} 1x, ${data.desktop.webp['2x']} 2x` media='(min-width: 1200px)')
+			if data.mobile
+				source(type='image/webp' srcset=`${data.mobile.webp['1x']} 1x, ${data.mobile.webp['2x']} 2x` media='(min-width: 320px)')
+				+e.IMG.image(src=`${data.mobile.jpg['1x']}` srcset=`${data.mobile.jpg['1x']} 1x, ${data.mobile.jpg['2x']} 2x` alt=``)
+			else
+				+e.IMG.image(src=`${data.desktop.jpg['1x']}` srcset=`${data.desktop.jpg['1x']} 1x, ${data.desktop.jpg['2x']} 2x` alt=``)

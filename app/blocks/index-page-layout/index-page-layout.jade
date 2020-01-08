@@ -1,0 +1,14 @@
+include ../promo-carousel/promo-carousel
+include ../news/news
+
+mixin index-page-layout()
+	- var promoCarouselSlides = getData('promo-carousel');
+
+	+b.index-page-layout&attributes(attributes)
+		+promo-carousel(promoCarouselSlides)
+		+page-trim
+			+e({b: 'index-page-layout'}).margin
+				+e({b: 'index-page-layout'}).columns
+					+e({b: 'index-page-layout'}).MAIN.main-column
+						+news
+					+e({b: 'index-page-layout'}).ASIDE.aside-column
