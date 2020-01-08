@@ -5,7 +5,7 @@ const init = () => {
 
 	if (menuHandler) {
 		menuHandler.addEventListener('click', () => {
-			menu.classList.toggle('menu--opened');
+			menu.classList.toggle('menu_opened');
 		});
 	}
 };
