@@ -53,6 +53,9 @@
 		line-height 21px
 		color $black
 
+	.news__item-bookmark-button
+		display none
+
 .news__item-title
 	font-family 'Playfair Display'
 	font-weight 900
@@ -71,8 +74,26 @@
 	position relative
 	text-decoration none
 
+	&:hover
+		.news__item-bookmark-button
+			display block
+
 .news__item-description
 	order 1
 
 .news__item-image
 	margin-right 15px
+
+.news__item-bookmark-button
+	display none
+	font-size 0
+	width 12px
+	height 15px
+	background-image url('/assets/images/bookmark-icon.svg')
+	background-color transparent
+	border none
+	background-repeat no-repeat
+	background-size 12px 15px
+	position absolute
+	left 110px
+	top 5px
