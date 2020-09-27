@@ -1,5 +1,5 @@
-mixin retinaWebpImage(data, className)
-	+b.FIGURE.retina-webp-image(class=className)
+mixin retinaWebpImage(data, mix)
+	+b.FIGURE.retina-webp-image(class=mix)
 		+e.PICTURE.canvas
 			source(type='image/webp' srcset=`${data.desktop.webp['1x']} 1x, ${data.desktop.webp['2x']} 2x` media='(min-width: 1200px)')
 			if data.mobile
