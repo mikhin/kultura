@@ -1,0 +1,32 @@
+.review-card
+	display block
+
+.review-list__item-title
+	font-family 'Playfair Display', "Times New Roman", serif
+	font-weight 900
+	font-size 14px
+	line-height 17px
+	color $black
+	margin-bottom 10px
+	transition color .3s
+
+.review-list__item-summary
+	color $black
+	font-size 10px
+	line-height 15px
+
+.review-list__link
+	display flex
+	position relative
+	text-decoration none
+
+	&:hover, &:focus
+		.review-list__item-title
+			color $accent
+
+
+.review-list__item-description
+	order 1
+
+.review-list__item-image
+	margin-right 15px

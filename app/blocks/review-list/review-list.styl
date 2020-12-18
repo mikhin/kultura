@@ -1,0 +1,22 @@
+.review-list
+	display block
+
+.review-list__title
+	font-weight bold
+	font-size 17px
+	line-height 20px
+	letter-spacing 2px
+	color #000000
+	text-transform uppercase
+	margin-bottom 15px
+
+.review-list__list
+	@media (min-width: $desktopWidth)
+		display grid
+
+.review-list__item
+	@media (min-width: $desktopWidth)
+		grid-column 2
+
+	&:not(:last-child)
+		margin-bottom 30px

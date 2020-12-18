@@ -1,0 +1,66 @@
+[
+	{
+		"image": {
+			"desktop": {
+				"jpg": {
+					"1x": "/assets/images/reviews-1@1x.jpg",
+					"2x": "/assets/images/reviews-1@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/reviews-1@1x.webp",
+					"2x": "/assets/images/reviews-1@2x.webp"
+				}
+			}
+		},
+		"title": "«Шальные годы» Монпарнаса",
+		"summary": "В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»"
+	},
+	{
+		"image": {
+			"desktop": {
+				"jpg": {
+					"1x": "/assets/images/reviews-2@1x.jpg",
+					"2x": "/assets/images/reviews-2@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/reviews-2@1x.webp",
+					"2x": "/assets/images/reviews-2@2x.webp"
+				}
+			}
+		},
+		"title": "Анатомия за 30 секунд",
+		"summary": "Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос"
+	},
+	{
+		"image": {
+			"desktop": {
+				"jpg": {
+					"1x": "/assets/images/reviews-3@1x.jpg",
+					"2x": "/assets/images/reviews-3@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/reviews-3@1x.webp",
+					"2x": "/assets/images/reviews-3@2x.webp"
+				}
+			}
+		},
+		"title": "Русские балетные сезоны ",
+		"summary": "В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре"
+	},
+	{
+		"image": {
+			"desktop": {
+				"jpg": {
+					"1x": "/assets/images/reviews-4@1x.jpg",
+					"2x": "/assets/images/reviews-4@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/reviews-4@1x.webp",
+					"2x": "/assets/images/reviews-4@2x.webp"
+				}
+			}
+		},
+		"title": "Сферические чудаки",
+		"summary": "Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды» "
+	}
+]
