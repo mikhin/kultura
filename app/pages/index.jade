@@ -1,8 +1,32 @@
 extends ../blocks/layout-default/layout-default
-include ../blocks/index-view/index-view
+
+include ../blocks/header/header
+
+include ../blocks/index-page-layout/index-page-layout
+include ../blocks/index-page-layout/index-page-layout__main-column
+include ../blocks/index-page-layout/index-page-layout__main-column-section
+include ../blocks/index-page-layout/index-page-layout__aside-column
+include ../blocks/index-page-layout/index-page-layout__aside-column-section
+
+include ../blocks/promo-carousel/promo-carousel
+include ../blocks/news/news
+include ../blocks/review-list/review-list
 
 block head
 	- var pageTitle = 'KULTURA — Новости культуры';
 
+block header
+	+header
+
 block content
-	+index-view
+	- var promoCarouselSlides = getData('promo-carousel');
+
+	+promo-carousel(promoCarouselSlides)
+	+page-trim
+		+index-page-layout
+			+index-page-layout__main-column
+				+index-page-layout__main-column-section
+					+news
+				+index-page-layout__main-column-section
+					+review-list
+		+index-page-layout__aside-column
