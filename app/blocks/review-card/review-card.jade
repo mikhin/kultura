@@ -1,6 +1,0 @@
-mixin review-card(review)
-	+b.review-card&attributes(attributes)
-		+e.link(href="#")
-			+e({tag: 'H3'}).title= review.title
-			+e.P.summary= review.summary
-			+retinaWebpImage(review.image, 'review-card__image')
