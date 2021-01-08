@@ -9,7 +9,9 @@ include ../blocks/index-page-layout/index-page-layout__aside-column
 include ../blocks/index-page-layout/index-page-layout__aside-column-section
 
 include ../blocks/promo-carousel/promo-carousel
-include ../blocks/news/news
+include ../blocks/news-list/news-list
+include ../blocks/news-list/news-list__item
+include ../blocks/news-card/news-card
 include ../blocks/review-list/review-list
 
 block head
@@ -20,13 +22,19 @@ block header
 
 block content
 	- var promoCarouselSlides = getData('promo-carousel');
+	- var news = getData('news');
 
 	+promo-carousel(promoCarouselSlides)
 	+page-trim
 		+index-page-layout
 			+index-page-layout__main-column
 				+index-page-layout__main-column-section
-					+news
+					+news-list
+						each newsItem in news
+							- primary = newsItem.mods && newsItem.mods.primary
+
+							+news-list__item
+								+news-card({data: newsItem, mods: {type: primary ? 'primary' : null}})
 				+index-page-layout__main-column-section
 					+review-list
 		+index-page-layout__aside-column

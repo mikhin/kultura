@@ -1,0 +1,11 @@
+mixin news-list()
+	- props = typeof props != 'undefined' ? props : {}
+
+	- var attrs = props.attrs || {}
+	- var data = props.data || {}
+	- var mix = props.mix ? {'class': props.mix} : {}
+
+	+b.news-list&attributes(attrs, mix)
+		+e({ tag: 'H2' }).title Новости
+		+e.UL.list
+			block

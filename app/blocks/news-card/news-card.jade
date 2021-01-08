@@ -1,0 +1,14 @@
+mixin news-card(props)
+	- props = typeof props != 'undefined' ? props : {}
+
+	- var attrs = props.attrs || {}
+	- var data = props.data || {}
+	- var mods = props.mods || {}
+	- var mix = props.mix ? {'class': props.mix} : {}
+
+	+b.news-card(class= mods.type ? "news-card_type_#{mods.type}" : "")&attributes(attrs, mix)
+		+e.link(href="#")
+			+e.DIV.description
+				+e({tag: 'H3'}).title= data.title
+				+e.P.summary= data.summary
+			+retinaWebpImage(data.image, 'news-card__image')

@@ -1,0 +1,36 @@
+.news-list
+	display block
+
+.news-list__title
+	font-weight bold
+	font-size 17px
+	line-height 20px
+	letter-spacing 2px
+	color #000000
+	text-transform uppercase
+	margin-bottom 15px
+
+.news-list__list
+	@media (min-width: $desktopWidth)
+		display grid
+		grid-template-columns 470px 270px
+		column-gap 30px
+
+.news-list__item
+	@media (min-width: $desktopWidth)
+		grid-column 2
+
+	&:not(:last-child)
+		margin-bottom 30px
+
+.news-list__item_primary
+	margin-bottom 31px
+
+	&:not(:last-child)
+		@media (min-width: $desktopWidth)
+			margin-bottom 0
+
+	@media (min-width: $desktopWidth)
+		grid-column 1
+		grid-row 1 / span 3
+		width 470px

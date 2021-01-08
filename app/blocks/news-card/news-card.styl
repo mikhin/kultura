@@ -1,0 +1,48 @@
+.news-card__title
+	font-family 'Playfair Display', 'Times New Roman', serif
+	font-weight 900
+	font-size 14px
+	line-height 17px
+	color $black
+	margin-bottom 10px
+	transition color .3s
+
+.news-card__summary
+	color $black
+	font-size 10px
+	line-height 15px
+
+.news-card__link
+	display flex
+	position relative
+	text-decoration none
+
+	&:hover, &:focus
+		.news-card__title
+			color $accent
+
+.news-card__description
+	order 1
+
+.news-card__image
+	margin-right 15px
+
+.news-card_type_primary
+	.news-card__description
+		position absolute
+		bottom 24px
+		left 24px
+		right 24px
+
+	.news-card__title
+		font-size 20px
+		line-height 27px
+		margin-bottom 16px
+
+	.news__link
+		display block
+
+	.news-card__summary
+		font-size 14px
+		line-height 21px
+		color $black
