@@ -3,22 +3,22 @@
 		"image": {
 			"desktop": {
 				"jpg": {
-					"1x": "/assets/images/reviews-1-desktop@1x.jpg",
-					"2x": "/assets/images/reviews-1-desktop@2x.jpg"
+					"1x": "/assets/images/reviews/reviews-1-desktop@1x.jpg",
+					"2x": "/assets/images/reviews/reviews-1-desktop@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/reviews-1-desktop@1x.webp",
-					"2x": "/assets/images/reviews-1-desktop@2x.webp"
+					"1x": "/assets/images/reviews/reviews-1-desktop@1x.webp",
+					"2x": "/assets/images/reviews/reviews-1-desktop@2x.webp"
 				}
 			},
 			"mobile": {
 				"jpg": {
-					"1x": "/assets/images/reviews-1-mobile@1x.jpg",
-					"2x": "/assets/images/reviews-1-mobile@2x.jpg"
+					"1x": "/assets/images/reviews/reviews-1-mobile@1x.jpg",
+					"2x": "/assets/images/reviews/reviews-1-mobile@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/reviews-1-mobile@1x.webp",
-					"2x": "/assets/images/reviews-1-mobile@2x.webp"
+					"1x": "/assets/images/reviews/reviews-1-mobile@1x.webp",
+					"2x": "/assets/images/reviews/reviews-1-mobile@2x.webp"
 				}
 			}
 		},
@@ -29,22 +29,22 @@
 		"image": {
 			"desktop": {
 				"jpg": {
-					"1x": "/assets/images/reviews-2-desktop@1x.jpg",
-					"2x": "/assets/images/reviews-2-desktop@2x.jpg"
+					"1x": "/assets/images/reviews/reviews-2-desktop@1x.jpg",
+					"2x": "/assets/images/reviews/reviews-2-desktop@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/reviews-2-desktop@1x.webp",
-					"2x": "/assets/images/reviews-2-desktop@2x.webp"
+					"1x": "/assets/images/reviews/reviews-2-desktop@1x.webp",
+					"2x": "/assets/images/reviews/reviews-2-desktop@2x.webp"
 				}
 			},
 			"mobile": {
 				"jpg": {
-					"1x": "/assets/images/reviews-2-mobile@1x.jpg",
-					"2x": "/assets/images/reviews-2-mobile@2x.jpg"
+					"1x": "/assets/images/reviews/reviews-2-mobile@1x.jpg",
+					"2x": "/assets/images/reviews/reviews-2-mobile@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/reviews-2-mobile@1x.webp",
-					"2x": "/assets/images/reviews-2-mobile@2x.webp"
+					"1x": "/assets/images/reviews/reviews-2-mobile@1x.webp",
+					"2x": "/assets/images/reviews/reviews-2-mobile@2x.webp"
 				}
 			}
 		},
@@ -55,22 +55,22 @@
 		"image": {
 			"desktop": {
 				"jpg": {
-					"1x": "/assets/images/reviews-3-desktop@1x.jpg",
-					"2x": "/assets/images/reviews-3-desktop@2x.jpg"
+					"1x": "/assets/images/reviews/reviews-3-desktop@1x.jpg",
+					"2x": "/assets/images/reviews/reviews-3-desktop@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/reviews-3-desktop@1x.webp",
-					"2x": "/assets/images/reviews-3-desktop@2x.webp"
+					"1x": "/assets/images/reviews/reviews-3-desktop@1x.webp",
+					"2x": "/assets/images/reviews/reviews-3-desktop@2x.webp"
 				}
 			},
 			"mobile": {
 				"jpg": {
-					"1x": "/assets/images/reviews-3-mobile@1x.jpg",
-					"2x": "/assets/images/reviews-3-mobile@2x.jpg"
+					"1x": "/assets/images/reviews/reviews-3-mobile@1x.jpg",
+					"2x": "/assets/images/reviews/reviews-3-mobile@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/reviews-3-mobile@1x.webp",
-					"2x": "/assets/images/reviews-3-mobile@2x.webp"
+					"1x": "/assets/images/reviews/reviews-3-mobile@1x.webp",
+					"2x": "/assets/images/reviews/reviews-3-mobile@2x.webp"
 				}
 			}
 		},
@@ -81,22 +81,22 @@
 		"image": {
 			"desktop": {
 				"jpg": {
-					"1x": "/assets/images/reviews-4-desktop@1x.jpg",
-					"2x": "/assets/images/reviews-4-desktop@2x.jpg"
+					"1x": "/assets/images/reviews/reviews-4-desktop@1x.jpg",
+					"2x": "/assets/images/reviews/reviews-4-desktop@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/reviews-4-desktop@1x.webp",
-					"2x": "/assets/images/reviews-4-desktop@2x.webp"
+					"1x": "/assets/images/reviews/reviews-4-desktop@1x.webp",
+					"2x": "/assets/images/reviews/reviews-4-desktop@2x.webp"
 				}
 			},
 			"mobile": {
 				"jpg": {
-					"1x": "/assets/images/reviews-4-mobile@1x.jpg",
-					"2x": "/assets/images/reviews-4-mobile@2x.jpg"
+					"1x": "/assets/images/reviews/reviews-4-mobile@1x.jpg",
+					"2x": "/assets/images/reviews/reviews-4-mobile@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/reviews-4-mobile@1x.webp",
-					"2x": "/assets/images/reviews-4-mobile@2x.webp"
+					"1x": "/assets/images/reviews/reviews-4-mobile@1x.webp",
+					"2x": "/assets/images/reviews/reviews-4-mobile@2x.webp"
 				}
 			}
 		},

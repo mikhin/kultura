@@ -7,22 +7,22 @@
 		"background": {
 			"desktop": {
 				"jpg": {
-					"1x": "/assets/images/promo-carousel__slide-2--desktop@1x.jpg",
-					"2x": "/assets/images/promo-carousel__slide-2--desktop@2x.jpg"
+					"1x": "/assets/images/promo-carousel-slides/promo-carousel__slide-2--desktop@1x.jpg",
+					"2x": "/assets/images/promo-carousel-slides/promo-carousel__slide-2--desktop@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/promo-carousel__slide-2--desktop@1x.webp",
-					"2x": "/assets/images/promo-carousel__slide-2--desktop@2x.webp"
+					"1x": "/assets/images/promo-carousel-slides/promo-carousel__slide-2--desktop@1x.webp",
+					"2x": "/assets/images/promo-carousel-slides/promo-carousel__slide-2--desktop@2x.webp"
 				}
 			},
 			"mobile": {
 				"jpg": {
-					"1x": "/assets/images/promo-carousel__slide-2--mobile@1x.jpg",
-					"2x": "/assets/images/promo-carousel__slide-2--mobile@2x.jpg"
+					"1x": "/assets/images/promo-carousel-slides/promo-carousel__slide-2--mobile@1x.jpg",
+					"2x": "/assets/images/promo-carousel-slides/promo-carousel__slide-2--mobile@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/promo-carousel__slide-2--mobile@1x.webp",
-					"2x": "/assets/images/promo-carousel__slide-2--mobile@2x.webp"
+					"1x": "/assets/images/promo-carousel-slides/promo-carousel__slide-2--mobile@1x.webp",
+					"2x": "/assets/images/promo-carousel-slides/promo-carousel__slide-2--mobile@2x.webp"
 				}
 			}
 		}
@@ -35,22 +35,22 @@
 		"background": {
 			"desktop": {
 				"jpg": {
-					"1x": "/assets/images/promo-carousel__slide-1--desktop@1x.jpg",
-					"2x": "/assets/images/promo-carousel__slide-1--desktop@2x.jpg"
+					"1x": "/assets/images/promo-carousel-slides/promo-carousel__slide-1--desktop@1x.jpg",
+					"2x": "/assets/images/promo-carousel-slides/promo-carousel__slide-1--desktop@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/promo-carousel__slide-1--desktop@1x.webp",
-					"2x": "/assets/images/promo-carousel__slide-1--desktop@2x.webp"
+					"1x": "/assets/images/promo-carousel-slides/promo-carousel__slide-1--desktop@1x.webp",
+					"2x": "/assets/images/promo-carousel-slides/promo-carousel__slide-1--desktop@2x.webp"
 				}
 			},
 			"mobile": {
 				"jpg": {
-					"1x": "/assets/images/promo-carousel__slide-1--mobile@1x.jpg",
-					"2x": "/assets/images/promo-carousel__slide-1--mobile@2x.jpg"
+					"1x": "/assets/images/promo-carousel-slides/promo-carousel__slide-1--mobile@1x.jpg",
+					"2x": "/assets/images/promo-carousel-slides/promo-carousel__slide-1--mobile@2x.jpg"
 				},
 				"webp": {
-					"1x": "/assets/images/promo-carousel__slide-1--mobile@1x.webp",
-					"2x": "/assets/images/promo-carousel__slide-1--mobile@2x.webp"
+					"1x": "/assets/images/promo-carousel-slides/promo-carousel__slide-1--mobile@1x.webp",
+					"2x": "/assets/images/promo-carousel-slides/promo-carousel__slide-1--mobile@2x.webp"
 				}
 			}
 		}
