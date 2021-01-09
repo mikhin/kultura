@@ -1,15 +1,5 @@
-include ../retina-webp-image/retina-webp-image
-
 mixin review-list()
-	- var reviews = getData('reviews');
-
 	+b.review-list&attributes(attributes)
 		+e({ tag: 'H2' }).title Обзоры
 		+e.UL.list
-			each review in reviews
-				+e.LI.item
-					+e.item-link(href="#")
-						+e.DIV.item-description
-							+e({ tag: 'H3' }).item-title= review.title
-							+e.P.item-summary= review.summary
-						+retinaWebpImage(review.image, 'review-list__item-image')
+			block

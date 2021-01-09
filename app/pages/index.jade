@@ -13,6 +13,8 @@ include ../blocks/news-list/news-list
 include ../blocks/news-list/news-list__item
 include ../blocks/news-card/news-card
 include ../blocks/review-list/review-list
+include ../blocks/review-list/review-list__item
+include ../blocks/review-card/review-card
 
 block head
 	- var pageTitle = 'KULTURA — Новости культуры';
@@ -23,6 +25,7 @@ block header
 block content
 	- var promoCarouselSlides = getData('promo-carousel');
 	- var news = getData('news');
+	- var reviews = getData('reviews');
 
 	+promo-carousel(promoCarouselSlides)
 	+page-trim
@@ -37,4 +40,7 @@ block content
 								+news-card({data: newsItem, mods: {type: primary ? 'primary' : null}})
 				+index-page-layout__main-column-section
 					+review-list
+						each reviewItem in reviews
+							+review-list__item
+								+review-card({data: reviewItem})
 		+index-page-layout__aside-column
