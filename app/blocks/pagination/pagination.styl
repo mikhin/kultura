@@ -1,0 +1,79 @@
+.pagination
+	display flex
+	align-items center
+	justify-content center
+
+.pagination__pages-list
+	display flex
+	margin-right 16px
+	margin-left 16px
+
+	@media (min-width: $desktopWidth)
+		margin-right 90px
+		margin-left 90px
+
+.pagination__navigation-control
+	background transparent
+	border none
+	display block
+	width 16px
+	height 16px
+	font-size 0
+
+	@media (min-width: $desktopWidth)
+		width 29px
+		height 27px
+
+	&::before
+		content ''
+		display block
+		width 0
+		height 0
+		border-style solid
+		border-width 6px 6px 6px 0
+		border-color transparent #878787 transparent transparent
+
+	&:hover, &:focus
+		&::before
+			border-right-color $black
+
+.pagination__navigation-control_type_previous-page
+	color black
+	border-right 1px solid #878787
+
+.pagination__navigation-control_type_next-page
+	color green
+	border-left 1px solid #878787
+	position relative
+
+	&::before
+		transform rotate(180deg) translateY(50%)
+		position absolute
+		right 0
+		top 50%
+
+.pagination__item
+	&:not(:last-child)
+		margin-right 16px
+
+.pagination__item-content
+	display flex
+	align-items center
+	background transparent
+	border none
+	color #878787
+	font-size 14px
+	line-height 17px
+	padding 4px
+	border-bottom 3px solid transparent
+
+	&:hover, &:focus
+		&:not(.pagination__item-content_divider)
+			color $black
+			border-bottom 3px solid $accent
+			transform scale(1.4)
+
+.pagination__item-content_active
+	color $black
+	border-bottom 3px solid $accent
+	transform scale(1.4)

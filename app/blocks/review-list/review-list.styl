@@ -10,12 +10,18 @@
 	text-transform uppercase
 	margin-bottom 15px
 
-.review-list__list
+.review-list__items
 	@media (min-width: $desktopWidth)
 		display grid
 		grid-template-columns repeat(2, 1fr)
 		grid-gap 30px
 		grid-row-gap 38px
+
+	+ .review-list__pagination
+		margin-top 30px
+
+		@media (min-width: $desktopWidth)
+			margin-top 44px
 
 .review-list__item
 	&:not(:last-child)

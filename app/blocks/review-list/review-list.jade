@@ -1,5 +1,7 @@
 mixin review-list()
 	+b.review-list&attributes(attributes)
 		+e({ tag: 'H2' }).title Обзоры
-		+e.UL.list
+		+e.UL.items
 			block
+		+e.pagination
+			+pagination

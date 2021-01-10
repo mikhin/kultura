@@ -1,0 +1,29 @@
+//currentPage={this.state.currentPage}
+//totalPages={this.state.totalPages}
+
+mixin pagination(props)
+	- props = typeof props != 'undefined' ? props : {}
+
+	- var attrs = props.attrs || {}
+	- var data = props.data || {}
+	- var mods = props.mods || {}
+	- var mix = props.mix ? {'class': props.mix} : {}
+
+	+b.pagination()&attributes(attrs, mix)
+		+e.BUTTON.navigation-control._type_previous-page Следующая страница
+		+e.UL.pages-list
+			+e.LI.item
+				+e.BUTTON.item-content._active 1
+			+e.LI.item
+				+e.BUTTON.item-content 2
+			+e.LI.item
+				+e.BUTTON.item-content 3
+			+e.LI.item
+				+e.BUTTON.item-content 4
+			+e.LI.item
+				+e.BUTTON.item-content 5
+			+e.LI.item
+				+e.SPAN.item-content._divider ...
+			+e.LI.item
+				+e.BUTTON.item-content 35
+		+e.BUTTON.navigation-control._type_next-page Предыдущая страница
