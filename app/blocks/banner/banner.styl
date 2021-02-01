@@ -1,0 +1,62 @@
+.banner
+	position relative
+	display block
+	text-decoration none
+	transition opacity .3s
+
+	&:hover
+		opacity .75
+
+.banner__title
+	display block
+	font-family 'Playfair Display', 'Times New Roman', serif
+	font-weight 900
+	font-size 20px
+	line-height 30px
+	text-align center
+	letter-spacing 2px
+	text-transform uppercase
+	position absolute
+	max-width 163px
+	left 50%
+	transform translateX(-50%)
+	top 40px
+	z-index 1
+
+	@media (min-width: $desktopWidth)
+		font-size 30px
+		line-height 40px
+		max-width 235px
+		top 48px
+
+.banner__action
+	position absolute
+	z-index 1
+	bottom 40px
+	font-weight 600
+	font-size 12px
+	line-height 25px
+	letter-spacing 2px
+	text-transform uppercase
+	color $white
+	left 50%
+	transform translateX(-50%)
+	padding 11px 30px
+
+	@media (min-width: $desktopWidth)
+		bottom 30px
+
+.banner_theme_light
+	.banner__title
+		color $black
+
+	.banner__action
+		background $accent
+
+.banner_theme_dark
+	.banner__title
+		color $white
+
+	.banner__action
+		background rgba(0, 0, 0, .7)
+		border 1px solid $accent

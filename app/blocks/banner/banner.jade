@@ -1,0 +1,17 @@
+include ../retina-webp-image/retina-webp-image
+
+mixin banner(props)
+	- props = typeof props != 'undefined' ? props : {}
+
+	- var attrs = props.attrs || {}
+	- var data = props.data || {}
+	- var mods = props.mods || {}
+	- var mix = props.mix ? {'class': props.mix} : {}
+
+	+b.A.banner(href= data.link)(
+		class= mods.direction ? "banner_direction_#{mods.direction}" : "",
+		class= mods.theme ? "banner_theme_#{mods.theme}" : ""
+	)&attributes(attrs, mix)
+		+e({ tag: 'H2' }).title= data.title
+		+retinaWebpImage(data.image, 'news-card__image')
+		+e.P.action= data.action

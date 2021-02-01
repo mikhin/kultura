@@ -17,6 +17,8 @@ include ../blocks/review-list/review-list__item
 include ../blocks/review-card/review-card
 include ../blocks/pagination/pagination
 
+include ../blocks/banner/banner
+
 block head
 	- var pageTitle = 'KULTURA — Новости культуры';
 
@@ -27,6 +29,7 @@ block content
 	- var promoCarouselSlides = getData('promo-carousel');
 	- var news = getData('news');
 	- var reviews = getData('reviews');
+	- var banners = getData('banners');
 
 	+promo-carousel(promoCarouselSlides)
 	+page-trim
@@ -44,4 +47,28 @@ block content
 						each reviewItem in reviews
 							+review-list__item
 								+review-card({data: reviewItem})
-		+index-page-layout__aside-column
+			+index-page-layout__aside-column
+				+index-page-layout__aside-column-section
+					+banner({
+						data: banners.balloons,
+						mods: {
+							direction: 'horizontal',
+							theme: 'light',
+						}
+					})
+				+index-page-layout__aside-column-section
+					+banner({
+						data: banners['photo-shoot'],
+						mods: {
+							direction: 'horizontal',
+							theme: 'dark',
+						}
+					})
+				+index-page-layout__aside-column-section
+					+banner({
+						data: banners.exhibition,
+						mods: {
+							direction: 'horizontal',
+							theme: 'dark',
+						}
+					})

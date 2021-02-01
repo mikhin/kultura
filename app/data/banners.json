@@ -1,0 +1,83 @@
+{
+	"balloons": {
+		"title": "Воздушные шары",
+		"link": "#",
+		"action": "Смотреть",
+		"image": {
+			"desktop": {
+				"jpg": {
+					"1x": "/assets/images/banners/balloons/banner-1--desktop@1x.jpg",
+					"2x": "/assets/images/banners/balloons/banner-1--desktop@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/banners/balloons/banner-1--desktop@1x.webp",
+					"2x": "/assets/images/banners/balloons/banner-1--desktop@2x.webp"
+				}
+			},
+			"mobile": {
+				"jpg": {
+					"1x": "/assets/images/banners/balloons/banner-1--mobile@1x.jpg",
+					"2x": "/assets/images/banners/balloons/banner-1--mobile@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/banners/balloons/banner-1--mobile@1x.webp",
+					"2x": "/assets/images/banners/balloons/banner-1--mobile@2x.webp"
+				}
+			}
+		}
+	},
+	"photo-shoot": {
+		"title": "Необычная фотосессия",
+		"link": "#",
+		"action": "Смотреть",
+		"image": {
+			"desktop": {
+				"jpg": {
+					"1x": "/assets/images/banners/photo-shoot/banner-2--desktop@1x.jpg",
+					"2x": "/assets/images/banners/photo-shoot/banner-2--desktop@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/banners/photo-shoot/banner-2--desktop@1x.webp",
+					"2x": "/assets/images/banners/photo-shoot/banner-2--desktop@2x.webp"
+				}
+			},
+			"mobile": {
+				"jpg": {
+					"1x": "/assets/images/banners/photo-shoot/banner-2--mobile@1x.jpg",
+					"2x": "/assets/images/banners/photo-shoot/banner-2--mobile@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/banners/photo-shoot/banner-2--mobile@1x.webp",
+					"2x": "/assets/images/banners/photo-shoot/banner-2--mobile@2x.webp"
+				}
+			}
+		}
+	},
+	"exhibition": {
+		"title": "Выставка птиц",
+		"link": "#",
+		"action": "Смотреть",
+		"image": {
+			"desktop": {
+				"jpg": {
+					"1x": "/assets/images/banners/exhibition/banner-3--desktop@1x.jpg",
+					"2x": "/assets/images/banners/exhibition/banner-3--desktop@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/banners/exhibition/banner-3--desktop@1x.webp",
+					"2x": "/assets/images/banners/exhibition/banner-3--desktop@2x.webp"
+				}
+			},
+			"mobile": {
+				"jpg": {
+					"1x": "/assets/images/banners/exhibition/banner-3--mobile@1x.jpg",
+					"2x": "/assets/images/banners/exhibition/banner-3--mobile@2x.jpg"
+				},
+				"webp": {
+					"1x": "/assets/images/banners/exhibition/banner-3--mobile@1x.webp",
+					"2x": "/assets/images/banners/exhibition/banner-3--mobile@2x.webp"
+				}
+			}
+		}
+	}
+}
