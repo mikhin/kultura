@@ -5,6 +5,10 @@ include ../page/page
 include ../page/page__header
 include ../page/page__content
 include ../page/page__footer
+
+include ../header/header
+include ../footer/footer
+
 include ../scripts/scripts
 
 doctype html
@@ -12,9 +16,9 @@ html(lang='ru')
 	include ../head/head
 	+page
 		+page__header
-			block header
+			+header
 		+page__content
 			block content
 		+page__footer
-			block footer
+			+footer
 		+scripts(['app.min.js'])

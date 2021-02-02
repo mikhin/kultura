@@ -8,7 +8,7 @@ mixin banner(props)
 	- var mods = props.mods || {}
 	- var mix = props.mix ? {'class': props.mix} : {}
 
-	+b.A.banner(href= data.link)(
+	+b.A.banner(href= data.link,
 		class= mods.direction ? "banner_direction_#{mods.direction}" : "",
 		class= mods.theme ? "banner_theme_#{mods.theme}" : ""
 	)&attributes(attrs, mix)

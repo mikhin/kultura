@@ -1,7 +1,18 @@
-mixin menu()
+mixin menu(props)
+	- props = typeof props != 'undefined' ? props : {}
+
+	- var attrs = props.attrs || {}
+	- var data = props.data || {}
+	- var mods = props.mods || {}
+	- var mix = props.mix ? {'class': props.mix} : {}
+
 	- var items = getData('menu');
-	+b.menu&attributes(attributes)
-		+e.BUTTON.handler(type='button') Показать/скрыть меню
+
+	+b.menu(
+		class= mods.adaptive ? "menu_adaptive" : "",
+	)&attributes(attrs, mix)
+		if mods.adaptive
+			+e.BUTTON.handler(type='button') Показать/скрыть меню
 		+e.UL.list
 			each item in items
 				+e.LI.item

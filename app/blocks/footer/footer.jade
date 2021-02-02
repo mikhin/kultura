@@ -1,0 +1,18 @@
+include ../logo/logo
+include ../menu/menu
+include ../page-trim/page-trim
+include ../copyright/copyright
+
+mixin footer()
+	+b.FOOTER.footer&attributes(attributes)
+		+page-trim
+			+e({b: 'footer'}).logo
+				+logo({
+					mods: {
+						size: 's'
+					}
+				})
+			+e({b: 'footer'}).menu
+				+menu
+			+e({b: 'footer'}).copyright
+				+copyright

@@ -2,9 +2,20 @@
 	display inline-block
 	font-family 'Playfair Display', 'Times New Roman', serif
 	font-weight 900
+	color $black
+
+.logo_size_s
 	font-size 25px
 	line-height 33px
-	color $black
+
+	@media (min-width: $desktopWidth)
+		font-size 28px
+		line-height 38px
+		letter-spacing 1px
+
+.logo_size_m
+	font-size 25px
+	line-height 33px
 
 	@media (min-width: $desktopWidth)
 		font-size 35px

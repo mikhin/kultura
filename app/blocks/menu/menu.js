@@ -1,4 +1,4 @@
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('.menu_adaptive');
 
 const init = () => {
 	const menuHandler = menu.querySelector('.menu__handler');

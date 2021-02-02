@@ -1,7 +1,5 @@
 extends ../blocks/layout-default/layout-default
 
-include ../blocks/header/header
-
 include ../blocks/index-page-layout/index-page-layout
 include ../blocks/index-page-layout/index-page-layout__main-column
 include ../blocks/index-page-layout/index-page-layout__main-column-section
@@ -21,9 +19,6 @@ include ../blocks/banner/banner
 
 block head
 	- var pageTitle = 'KULTURA — Новости культуры';
-
-block header
-	+header
 
 block content
 	- var promoCarouselSlides = getData('promo-carousel');

@@ -1,4 +1,4 @@
-mixin logo(props)
+mixin copyright(props)
 	- props = typeof props != 'undefined' ? props : {}
 
 	- var attrs = props.attrs || {}
@@ -6,6 +6,5 @@ mixin logo(props)
 	- var mods = props.mods || {}
 	- var mix = props.mix ? {'class': props.mix} : {}
 
-	+b.SPAN.logo(
-		class= mods.size ? "logo_size_#{mods.size}" : ""
-	)&attributes(attrs, mix) Новости культуры
+	+b.copyright()&attributes(attrs, mix)
+		+e.P.message © 2018 Новости культуры. Все права защищены.

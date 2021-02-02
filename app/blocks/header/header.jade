@@ -6,6 +6,14 @@ mixin header()
 	+b.HEADER.header&attributes(attributes)
 		+page-trim
 			+e({b: 'header'}).logo
-				+logo
+				+logo({
+					mods: {
+						size: 'm'
+					}
+				})
 			+e({b: 'header'}).menu
-				+menu
+				+menu({
+					mods: {
+						adaptive: true
+					}
+				})
