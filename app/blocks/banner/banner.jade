@@ -12,6 +12,7 @@ mixin banner(props)
 		class= mods.direction ? "banner_direction_#{mods.direction}" : "",
 		class= mods.theme ? "banner_theme_#{mods.theme}" : ""
 	)&attributes(attrs, mix)
-		+e({ tag: 'H2' }).title= data.title
-		+retinaWebpImage(data.image, 'news-card__image')
-		+e.P.action= data.action
+		+retinaWebpImage(data.image)
+		+e.DIV.description
+			+e({ tag: 'H2' }).title= data.title
+			+e.P.action= data.action

@@ -7,44 +7,74 @@
 	&:hover
 		opacity .75
 
-.banner__title
-	display block
-	font-family 'Playfair Display', 'Times New Roman', serif
-	font-weight 900
-	font-size 20px
-	line-height 30px
-	text-align center
-	letter-spacing 2px
-	text-transform uppercase
-	position absolute
-	max-width 163px
-	left 50%
-	transform translateX(-50%)
-	top 40px
-	z-index 1
-
-	@media (min-width: $desktopWidth)
-		font-size 30px
-		line-height 40px
-		max-width 235px
-		top 48px
-
 .banner__action
-	position absolute
-	z-index 1
-	bottom 40px
 	font-weight 600
 	font-size 12px
 	line-height 25px
 	letter-spacing 2px
 	text-transform uppercase
 	color $white
-	left 50%
-	transform translateX(-50%)
 	padding 11px 30px
 
 	@media (min-width: $desktopWidth)
 		bottom 30px
+
+.banner__title
+	font-weight 900
+	font-size 20px
+	line-height 30px
+	text-align center
+	letter-spacing 2px
+	text-transform uppercase
+
+	@media (min-width: $desktopWidth)
+		font-size 30px
+		line-height 40px
+
+.banner_direction_horizontal
+	.banner__description
+		display flex
+		flex-direction column
+		align-items center
+		position absolute
+		top 50%
+		left 50%
+		width 240px
+		transform translateX(-50%) translateY(-50%)
+
+		@media (min-width: $desktopWidth)
+			width auto
+			flex-direction row
+
+	.banner__title
+		margin-bottom 20px
+
+		@media (min-width: $desktopWidth)
+			margin-bottom 0
+			margin-right 47px
+			width 326px
+
+.banner_direction_vertical
+	.banner__title
+		display block
+		font-family 'Playfair Display', 'Times New Roman', serif
+		position absolute
+		max-width 163px
+		left 50%
+		transform translateX(-50%)
+		top 40px
+		z-index 1
+
+		@media (min-width: $desktopWidth)
+			max-width 235px
+			top 48px
+
+	.banner__action
+		position absolute
+		z-index 1
+		bottom 40px
+		left 50%
+		transform translateX(-50%)
 
 .banner_theme_light
 	.banner__title
