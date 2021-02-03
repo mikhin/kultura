@@ -2,9 +2,9 @@ include ../../../node_modules/bemto.jade/bemto
 include ../../../node_modules/jade-injected/jade-injected
 
 include ../page/page
-include ../page/page__header
-include ../page/page__content
-include ../page/page__footer
+include ../page/__header/page__header
+include ../page/__content/page__content
+include ../page/__footer/page__footer
 
 include ../header/header
 include ../footer/footer
@@ -17,8 +17,7 @@ html(lang='ru')
 	+page
 		+page__header
 			+header
-		+page__content
-			block content
+		block content
 		+page__footer
 			+footer
 		+scripts(['app.min.js'])
